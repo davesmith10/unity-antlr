@@ -79,6 +79,30 @@ public final class Unity {
     }
 
     /**
+     * Prints the parse tree in the specified format.
+     *
+     * @param result the parse result from {@link #parse(String)}
+     * @param format the output format to use
+     * @return the formatted parse tree as a string
+     */
+    public static String print(ParseResult result, PrintFormat format) {
+        UnityTreePrinter printer = new UnityTreePrinter(format);
+        ParseTreeWalker walker = new ParseTreeWalker();
+        walker.walk(printer, result.getParseTree());
+        return printer.getOutput();
+    }
+
+    /**
+     * Prints the parse tree in LOG format (default).
+     *
+     * @param result the parse result from {@link #parse(String)}
+     * @return the formatted parse tree as a string
+     */
+    public static String print(ParseResult result) {
+        return print(result, PrintFormat.LOG);
+    }
+
+    /**
      * Result of parsing a Unity document.
      */
     public static class ParseResult {
