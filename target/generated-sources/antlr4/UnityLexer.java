@@ -1,4 +1,7 @@
-// Generated from JSON.g4 by ANTLR 4.13.2
+// Generated from Unity.g4 by ANTLR 4.13.2
+
+package com.metamadbooks.unity.parser;
+
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -9,7 +12,7 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
-public class JSONLexer extends Lexer {
+public class UnityLexer extends Lexer {
 	static { RuntimeMetaData.checkVersion("4.13.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -37,7 +40,7 @@ public class JSONLexer extends Lexer {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'{'", "','", "'}'", "':'", "'['", "']'", "'true'", "'false'", 
+			null, "'['", "','", "']'", "'{'", "'}'", "':'", "'true'", "'false'", 
 			"'null'"
 		};
 	}
@@ -83,13 +86,13 @@ public class JSONLexer extends Lexer {
 	}
 
 
-	public JSONLexer(CharStream input) {
+	public UnityLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@Override
-	public String getGrammarFileName() { return "JSON.g4"; }
+	public String getGrammarFileName() { return "Unity.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -145,10 +148,10 @@ public class JSONLexer extends Lexer {
 		"\u0015K\u0001\u0000\u0000\u0000\u0017P\u0001\u0000\u0000\u0000\u0019V"+
 		"\u0001\u0000\u0000\u0000\u001bX\u0001\u0000\u0000\u0000\u001d[\u0001\u0000"+
 		"\u0000\u0000\u001fq\u0001\u0000\u0000\u0000!s\u0001\u0000\u0000\u0000"+
-		"#}\u0001\u0000\u0000\u0000%&\u0005{\u0000\u0000&\u0002\u0001\u0000\u0000"+
-		"\u0000\'(\u0005,\u0000\u0000(\u0004\u0001\u0000\u0000\u0000)*\u0005}\u0000"+
-		"\u0000*\u0006\u0001\u0000\u0000\u0000+,\u0005:\u0000\u0000,\b\u0001\u0000"+
-		"\u0000\u0000-.\u0005[\u0000\u0000.\n\u0001\u0000\u0000\u0000/0\u0005]"+
+		"#}\u0001\u0000\u0000\u0000%&\u0005[\u0000\u0000&\u0002\u0001\u0000\u0000"+
+		"\u0000\'(\u0005,\u0000\u0000(\u0004\u0001\u0000\u0000\u0000)*\u0005]\u0000"+
+		"\u0000*\u0006\u0001\u0000\u0000\u0000+,\u0005{\u0000\u0000,\b\u0001\u0000"+
+		"\u0000\u0000-.\u0005}\u0000\u0000.\n\u0001\u0000\u0000\u0000/0\u0005:"+
 		"\u0000\u00000\f\u0001\u0000\u0000\u000012\u0005t\u0000\u000023\u0005r"+
 		"\u0000\u000034\u0005u\u0000\u000045\u0005e\u0000\u00005\u000e\u0001\u0000"+
 		"\u0000\u000067\u0005f\u0000\u000078\u0005a\u0000\u000089\u0005l\u0000"+
